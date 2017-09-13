@@ -3,10 +3,8 @@
 <html lang = "en">
    
     <head>
-    	<!-- Bootstrap -->
-		  <link href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel = "stylesheet">
-		  
-		<style>
+    	  
+	 	<style>
 			.blueBackground {
 				background-color: #009cde;
 				color: #fff;
@@ -21,6 +19,22 @@
 			/* visited link */
 			a:visited {
 			    color: #0ff;
+			}
+
+			.btn-connexion:link {
+				color: #fff;
+			}
+
+			.btn-connexion:visited {
+			    color: #fff;
+			}
+
+			.btn-signup:link {
+				color: #000;
+			}
+
+			.btn-signup:visited {
+			    color: #000;
 			}
 
 			/* mouse over link */
@@ -45,6 +59,69 @@
 				  padding-bottom: 40px;
 			}
 
+			.header-buttons {
+   			     right: 1.5%;
+   			     position: absolute;
+   			     top: 18px;
+   			     display: block;
+
+			}
+
+			.btn {
+				border-radius: 25px;
+			}
+
+			.btn-connexion {
+				background: 0 0 ;
+				color : #fff;
+				cursor : pointer;
+				line-height : 9pt;
+				padding : 9pt 15px;
+				box-shadow: 0 0 0 1px #fff, 0 0 0 1px #fff;
+
+			}	
+
+			.btn-signup{
+				background: #fff ;
+				color : #2c2e2f;
+				cursor : pointer;
+				line-height : 9pt;
+				padding : 9pt 15px;
+				display: inline-block;
+
+			}	
+
+			.postpal-img-logo {
+				background : transparent url(https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg) center center no-repeat ;
+				background-size : contain;
+				height: 43px;
+				left:30px;
+				margin:0;
+				position: absolute;
+				top:13px;
+				width:136px;
+				text-indent:-999em;
+				z-index: 1;
+
+
+			}		
+
+			.pp-header.table-row{
+				position:absolute;
+				z-index:10;
+				width:100%;
+
+				border-bottom: 1px solid rgba(0,0,0,.3);
+				content:'';
+				display:block;
+				width:100%;
+				position:absolute;
+				height:72px;
+			}
+
+			.panel {
+				padding: 90px 0;
+			}
 			
 		 </style>
 		  <!-- #0d9cde 
@@ -73,9 +150,24 @@
    </head>
    
    <body>
-   		<section class="">
+
+   		<!--  navbar -->
+   		<header class="table-row pp-header blueBackground" role="banner">
+
+   			<a data-pa-click="header|paypal-logo" href="https://www.paypal.com/fr/webapps/mpp/home" class="postpal-img-logo">PayPal</a>
+
+	   			<div id="header-buttons" class="header-buttons">
+					<a href="https://www.paypal.com/signin?country.x=FR&amp;locale.x=fr_FR" data-pa-click="header|login" id="ul-btn" class="btn btn-small btn-connexion">Connexion</a>
+					<a href="https://www.paypal.com/fr/webapps/mpp/account-selection" id="signup-button" data-pa-click="header|signup" class="btn btn-small btn-signup">Ouvrir un compte</a>
+	   			</div>
+   		</header>
+   		<!--  /navbar -->
+
+
+   		<!--  section 1 : xxx -->
+   		<section class="panel">
    			<header class="paddingtop margingtop">
-      			<h1 class="text-center">La solution simple et sécurisée pour payer et être payé.</h1>
+      			<h1 class="text-center text-success">La solution simple et sécurisée pour payer et être payé.</h1>
       		</header>
       		<div class="container paddingtop paddingbottom">
 
@@ -95,6 +187,7 @@
       	</section>
 
 
+      	<!--  section 2 : xxx -->
    		<section class="blueBackground">
    			<header class="paddingtop margingtop">
       			<h1 class="text-center">Rejoignez les 7 millions de Français qui nous font confiance.</h1>
@@ -129,14 +222,19 @@
 
 
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <!-- <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  -->
+
+	<!-- css Bootstrap -->
+	<link href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel = "stylesheet">
+	
+
+      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <!-- <script src = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> -->
 
       
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-
+      <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	  -->
       
    </body>
 </html>
