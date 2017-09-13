@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+   
+    <head>
+    	  
+		<!-- css Bootstrap -->
+		<link href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel = "stylesheet">
+	
+	 	<style>
+			.blueBackground {
+				background-color: #009cde;
+				color: #fff;
+				background-image: 
+				radial-gradient(circle farthest-side at center bottom,#087aaa,#087 125%)
+			}
+
+			a:link {
+    			color: #0ff;
+			}
+
+			/* visited link */
+			a:visited {
+			    color: #0ff;
+			}
+
+			.btn-connexion:link {
+				color: #fff;
+			}
+
+			.btn-connexion:visited {
+			    color: #fff;
+			}
+
+			.btn-signup:link {
+				color: #000;
+			}
+
+			.btn-signup:visited {
+			    color: #000;
+			}
+
+			/* mouse over link */
+			a:hover {
+			    color: hotpink;
+			}
+
+			/* selected link */
+			a:active {
+			    color: hotpink;
+			}
+
+			.margingtop {
+				  margin-top: 20px;
+			}
+
+			.paddingtop {
+				  padding-top: 30px;
+			}
+
+			.paddingbottom {
+				  padding-bottom: 40px;
+			}
+
+			.header-buttons {
+   			     right: 1.5%;
+   			     position: absolute;
+   			     top: 18px;
+   			     display: block;
+
+			}
+
+			.btn {
+				border-radius: 25px;
+			}
+
+			.btn-connexion {
+				background: 0 0 ;
+				color : #fff;
+				cursor : pointer;
+				line-height : 9pt;
+				padding : 9pt 15px;
+				box-shadow: 0 0 0 1px #fff, 0 0 0 1px #fff;
+
+			}	
+
+			.btn-signup{
+				background: #fff ;
+				color : #2c2e2f;
+				cursor : pointer;
+				line-height : 9pt;
+				padding : 9pt 15px;
+				display: inline-block;
+
+			}	
+
+			.postpal-img-logo {
+				background : transparent url(https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg) center center no-repeat ;
+				background-size : contain;
+				height: 43px;
+				left:30px;
+				margin:0;
+				position: absolute;
+				top:13px;
+				width:136px;
+				text-indent:-999em;
+				z-index: 1;
+
+
+			}		
+
+			.pp-header.table-row{
+				position:absolute;
+				z-index:10;
+				width:100%;
+
+				border-bottom: 1px solid rgba(0,0,0,.3);
+				content:'';
+				display:block;
+				width:100%;
+				position:absolute;
+				height:72px;
+			}
+
+			.panel {
+				padding: 90px 0;
+			}
+			
+		 </style>
+		  <!-- #0d9cde 
+			radial-gradient(circle farthest-side at center bottom,#009cde,#003087 125%)
+			radial-gradient(circle farthest-side at center bottom,#009cde,#087 125%);
+			-->
+		  
+		  <meta charset = "utf-8">
+		  <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+		  <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		  
+		  <title>Postpal</title>
+		  
+		  
+		  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
+
+
+		  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		  
+		  <!--[if lt IE 9]>
+		  <script src = "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src = "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		  <![endif]-->
+  
+   </head>
+   
+   <body>
+
+   		<!--  navbar -->
+   		<header class="table-row pp-header blueBackground" role="banner">
+
+   			<a data-pa-click="header|paypal-logo" href="https://www.paypal.com/fr/webapps/mpp/home" class="postpal-img-logo">PayPal</a>
+
+	   			<div id="header-buttons" class="header-buttons">
+					<a href="https://www.paypal.com/signin?country.x=FR&amp;locale.x=fr_FR" data-pa-click="header|login" id="ul-btn" class="btn btn-small btn-connexion">Connexion</a>
+					<a href="https://www.paypal.com/fr/webapps/mpp/account-selection" id="signup-button" data-pa-click="header|signup" class="btn btn-small btn-signup">Ouvrir un compte</a>
+	   			</div>
+   		</header>
+   		<!--  /navbar -->
+
+
+   		<!--  section 1 : xxx -->
+   		<section class="panel">
+   			<header class="paddingtop margingtop">
+      			<h1 class="text-center text-success">La solution simple et sécurisée pour payer et être payé.</h1>
+      		</header>
+      		<div class="container paddingtop paddingbottom">
+
+				<div class="row">
+		    		<div class="col-sm-6">
+				      	<h3 class="mb-2">La sécurité avant tout</h3>
+				      	<p>Pour vous protéger contre la fraude bancaire, nous utilisons les meilleures méthodes de cryptage disponibles sur le marché. En cas de problème, vos achats éligibles peuvent être remboursés par notre <a href="https://www.google.com">Protection des Achats</a>. Et si votre achat ne vous plaît pas, nous pouvons également <a href="https://www.google.com">rembourser vos frais de retour.</a></p>
+				      	<a href="https://www.google.com">En savoir plus</a>
+				    </div>
+				    <div class="col-sm-6">
+				      	<h3 class="mb-2">Pratique et rapide</h3>
+				      	<p>Avec PayPal, plus besoin de saisir vos informations de carte à chacun de vos achats. Et vous pouvez activer One TouchTM pour payer encore plus vite. Envoyez aussi de l’argent à vos proches gratuitement* et en quelques secondes.</p>
+				      	<a href="https://www.google.com">En savoir plus</a>
+				    </div>
+				 </div>
+			</div>	 
+      	</section>
+
+
+      	<!--  section 2 : xxx -->
+   		<section class="blueBackground">
+   			<header class="paddingtop margingtop">
+      			<h1 class="text-center">Rejoignez les 7 millions de Français qui nous font confiance.</h1>
+      		</header>
+
+			<div class="container paddingtop paddingbottom">
+			    <div class="row">
+		    		<div class="col-sm-3">
+				      	<h3 class="mb-2">La sécurité avant tout</h3>
+				      	<p>Pour vous protéger contre la fraude bancaire, nous utilisons les meilleures méthodes de cryptage disponibles sur le marché. En cas de problème, vos achats éligibles peuvent être remboursés par notre <a href="https://www.google.com">Protection des Achats</a>. Et si votre achat ne vous plaît pas, nous pouvons également <a href="https://www.google.com">rembourser vos frais de retour.</a></p>
+				      	<a href="https://www.google.com">En savoir plus</a>
+				    </div>
+				    <div class="col-sm-3">
+				      	<h3 class="mb-2">Pratique et rapide</h3>
+				      	<p>Avec PayPal, plus besoin de saisir vos informations de carte à chacun de vos achats. Et vous pouvez activer One TouchTM pour payer encore plus vite. Envoyez aussi de l’argent à vos proches gratuitement* et en quelques secondes.</p>
+				      	<a href="https://www.google.com">En savoir plus</a>
+				    </div>
+				    <div class="col-sm-3">
+						<h3 class="mb-5">Partout avec vous</h3>
+				      	<p>Avec votre compte PayPal, vous pouvez faire des achats sur des millions de sites dans le monde, faire un don à une association caritative ou rembourser vos proches, depuis votre ordinateur, tablette ou smartphone.</p>
+				      	<a href="https://www.google.com">Téléchargez l'application</a>	
+				    </div>
+				    <div class="col-sm-3">
+						<h3 class="ml-2">Pas de frais cachés</h3>
+				      	<p>L'ouverture d'un compte est gratuite et aucuns frais ne vous seront facturés pour vos achats effectués par PayPal, sauf en cas de conversion de devise. L’envoi d’argent en euros à vos proches est gratuit en France et dans l’Espace économique européen.</p>
+				      	<a href="https://www.google.com">Nos tarifs en détail</a>
+				    </div>
+				 </div>
+		    </div>
+   		</section>
+
+
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+
+      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <!-- <script src = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> -->
+
+      
+      <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	  -->
+      
+   </body>
+</html>
